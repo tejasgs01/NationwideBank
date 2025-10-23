@@ -44,7 +44,7 @@ namespace NationwideBank
             }
             account.Debit(debitAmt);
 
-            // final details
+           
             account.ShowDetails();
 
             Console.WriteLine("\nThank you for banking with Nationwide! Press Enter to exit.");
