@@ -2,12 +2,12 @@
 
 namespace NationwideBank
 {
-    // very simple bank account model for Nationwide
+
     public class BankAccount
     {
-        // 3 main properties (kept as public fields for simplicity)
+       
         public string Name;
-        public string Type;     // "Savings" or "Current"
+        public string Type;     
         public double Balance;
 
         // set up an account
