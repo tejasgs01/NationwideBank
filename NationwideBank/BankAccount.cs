@@ -10,13 +10,12 @@ namespace NationwideBank
         public string Type;     
         public double Balance;
 
-        // set up an account
+    
         public void CreateAccount(string name, string type, double openingBalance)
         {
             Name = name;
             Type = type;
 
-            // Savings account restriction: cannot be zero (set to £1 minimum)
             if (type.ToLower() == "savings" && openingBalance <= 0)
             {
                 Console.WriteLine("⚠️ Savings account cannot start at £0. Setting to £1.");
@@ -47,7 +46,7 @@ namespace NationwideBank
             }
         }
 
-        // take money out
+       
         public void Debit(double amount)
         {
             if (amount <= 0)
