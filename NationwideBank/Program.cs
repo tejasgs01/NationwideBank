@@ -8,10 +8,8 @@ namespace NationwideBank
         {
             Console.WriteLine("=== Nationwide Bank Account System ===\n");
 
-            // make a BankAccount object
             BankAccount account = new BankAccount();
 
-            // collect details
             Console.Write("Enter your name: ");
             string name = Console.ReadLine();
 
@@ -25,11 +23,11 @@ namespace NationwideBank
                 Console.Write("Please enter a valid non-negative number: ");
             }
 
-            // create and show
+           
             account.CreateAccount(name, type, opening);
             account.ShowDetails();
 
-            // credit
+          
             Console.Write("\nEnter amount to credit: ");
             double creditAmt;
             while (!double.TryParse(Console.ReadLine(), out creditAmt))
@@ -38,7 +36,6 @@ namespace NationwideBank
             }
             account.Credit(creditAmt);
 
-            // debit
             Console.Write("Enter amount to debit: ");
             double debitAmt;
             while (!double.TryParse(Console.ReadLine(), out debitAmt))
